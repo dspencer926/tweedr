@@ -1,0 +1,310 @@
+#tweed-box-container {
+  background-image: url('http://harristweedco.co.uk/img/harris_tweed_close.jpg');
+  background-size: cover;
+  padding: auto 0;
+}
+
+p {
+  margin: 0;
+}
+
+/*NAV BAR*/
+
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 3px solid white;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30px;
+  background-color: lightblue;
+  font-family: 'Barrio', cursive;
+  font-size: 1em;
+}
+
+nav header {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav li {
+  padding: 25px 15px;
+}
+
+#nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+#nav-list li {
+  line-height: 100%;
+}
+
+#nav-list li:hover {
+  background-color: black;
+  color: white;
+}
+
+
+#red {
+  color: red;
+}
+
+/*FOOTER*/
+
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  height: 50px;
+  border-top: 3px solid white;
+  background-color: lightblue;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barrio', cursive;
+}
+
+footer p {
+  margin: 0 25px;
+}
+
+footer a {
+  color: white;
+}
+
+/*TWEED DISPLAY BOX*/
+
+#mid-section {
+  height: 100vh;
+  overflow: hidden;
+  overflow-x: hidden;
+  
+}
+
+#tweed-box-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+#tweed-box {
+  position: relative;
+  display: flex;
+  height: 50%;
+  width: 65%;
+  flex-direction: column;
+  border: 3px solid white;
+  background-color: lightblue;
+  padding: 75px;
+  overflow-x: scroll;
+}
+
+#add-form-div {
+  margin: 15px 0 5px;
+}
+
+.logInToPost {
+  display: flex;
+  font-family: 'Barrio', cursive;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+#add-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#add-text {
+  float: left;
+  width: 70%;
+  font-size: 1.5em;
+  font-family: 'Gloria Hallelujah', cursive;
+  padding: 15px;
+  border: none;
+  outline: none;
+}
+
+#add-submit {
+  float: right;
+  width: 15%;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  font-family: 'Barrio', cursive;
+  border: none;
+  font-size: 1.5em;
+  outline: none;
+}
+
+.editInput {
+  float: left;
+  width: 519px;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.editSubmit {
+  float: right;
+  width: 90px;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+/*.tweed {
+  transition: height 15s ease-out;
+}*/
+
+.tweed-new {
+  position: relative;
+  height: 160px;
+  width: 700px;
+  box-sizing: border-box;
+  background-color: white;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  padding: 35px;
+  margin: 5px 0;
+  height: 160px;
+  box-sizing: border-box;
+  /*height: 0px;*/
+  /*box-sizing: border-box;*/
+  opacity: 0;
+  transition: opacity 8s ease-out;
+}
+
+.tweed-old {
+  position: relative;
+  width: 90%;
+  box-sizing: border-box;
+  background-color: rgb(230, 230, 230);
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  padding: 50px;
+  margin: 5px auto;
+  font-size: 1.5em;
+  opacity: 1;
+  transition: opacity 8s ease-out;
+}
+
+#add-submit:active {
+  color: red;
+}
+
+input {
+   display: block;
+}
+
+
+.text-div {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.button-box{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  font-size: .6em;
+  left: 0%;
+  top: 5%;
+}
+
+.x-box {
+  margin: 0 10px;
+}
+
+.x-box:hover {
+  cursor: pointer;
+}
+
+.date-div {
+  font-size: .8em;
+}
+
+ul {
+  padding: 0;
+}
+
+/* auth box */
+
+#auth-div {
+  position: fixed;
+  display: flex;
+  height: 50%;
+  width: 30%;
+  top: 20%;
+  right: 35%;
+  padding: 35px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.9);
+  flex-direction: column;
+  justify-content: center;
+  /*justify-content: space-between;*/
+  align-items: center;
+  z-index: 2;
+}
+
+#auth-div form {
+  font-family: 'Gloria Hallelujah', cursive;
+  display: flex;
+  flex-direction: column;
+}
+
+#auth-div form * {
+  font-family: 'Gloria Hallelujah', cursive;
+  margin: 15px;
+  font-size: 1em;
+  border: none;
+  background-color: white;
+}
+
+.x-out {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  padding: 15px;
+  background-color: red;
+  font-size: 1.5em;
+  line-height: 0.5em;
+  color: white;
+}
+
+.auth-msg {
+  font-family: 'Barrio', cursive;
+  margin-bottom: 25px;
+  font-size: 2em;
+  color: white;
+}
+
+.auth-notice {
+  position: absolute;
+  bottom: 5%;
+  color: red;
+}
+
+.submit-btn:hover {
+  background-color: black;
+  color: red;
+}
